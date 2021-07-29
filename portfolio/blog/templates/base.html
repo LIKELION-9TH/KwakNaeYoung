@@ -1,0 +1,76 @@
+{% load static %}
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>포트폴리오</title>
+    <link href="../../dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="main.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Gamja+Flower&family=Jua&family=Nanum+Gothic&display=swap');
+
+        body {
+            font-family: 'Jua', sans-serif;
+        }
+
+        .nav {
+            font-size: medium;
+        }
+
+        .li {
+            border: 2px;
+            border-color: 94A9D8;
+        }
+
+        .wrapper {
+            height: auto;
+            min-height: 100%;
+            padding-bottom: 50px;
+
+        }
+
+        footer {
+            position: relative;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 40px;
+            transform: translateY(-100%);
+        }
+    </style>
+
+    {% block head %}
+    {% endblock head %}
+</head>
+
+<body>
+    <div class="container">
+        <div class="masthead">
+            <h4 class="text-muted">KWAK NAE YOUNG</h4>
+            <nav>
+                <ul class="nav nav-justified">
+                    <li class="active"><a href="{% url 'main' %}">메인페이지</a></li>
+                    <li><a href="{% url 'activity' %}">대외활동</a></li>
+                    <li><a href="{% url 'school' %}">교내활동</a></li>
+                    <li><a href="{% url 'contest' %}">공모전</a></li>
+                    <li><a href="{% url 'overseas' %}">해외경험</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    {%  block content %}
+    {% endblock content %}
+
+
+    <footer class="footer">
+        <hr>
+        <center>
+            <p> 곽내영의 포트폴리오 </p>
+            <small>문의 사항 : naeyoung123@naver.com</small>
+        </center>
+    </footer>
+</body>
+
+</html>

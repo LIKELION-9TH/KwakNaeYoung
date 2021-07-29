@@ -1,0 +1,109 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}
+대외활동
+{% endblock title %}
+
+{% block head %}
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Gamja+Flower&family=Jua&family=Nanum+Gothic&display=swap');
+
+    body {
+        font-family: 'Jua', sans-serif;
+    }
+
+    .jumbotron {
+        background-color: 94A9D8;
+        color: white;
+    }
+</style>
+
+{% endblock head%}
+
+<>
+    {% block content %}
+    <div class="wrapper">
+        <div class="container">
+            <div class="jumbotron">
+                <h1>대외활동</h1>
+                <h3># 부스트코스코칭스터디 : CS502기 <br>
+                    # 유니세프 캠페이너스 9기 <br>
+                    # 멋쟁이 사자처럼 9기 <br>
+                    # 2021년도 지역사회기여 장학생 <br>
+                </h3>
+            </div>
+
+
+            <hr class="featurette-divider">
+            <div class="row featurette">
+                <div class="col-xs-6">
+                    <h2 class="featurette-heading">유니세프 대학생 지원봉사단 캠페이너스 9기</h2>
+                    <h3><span class="text-muted">2019.07 ~ 2020.03</span></h3>
+                    <br>
+                    <p class="text-muted" style="font-size: large;"> 유니세프 어린이지구촌체험관 및 홍보부스 운영 지원, 기타 대내외 행사지원 등
+                    </p>
+                    <br> <br>
+                    <p class="text-muted" style="font-size:medium">✔ 유니세프 어린이지구촌체험관은?<br>
+
+                        세계 어린이 현황과 유니세프 활동을 잘 이해하도록 10개 코너로 구성한 공간으로, 교육·보건· 영양·식수와 위생·어린이 보호 등 차별 없는 유니세프 구호활동을 체험할 수
+                        있는 곳입니다.
+
+                    </p>
+                </div>
+                <div class="col-xs-6">
+                    <img class="img-rectangle"
+                        src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw=="
+                        alt="작품사진" width="100%">
+                </div>
+            </div>
+
+            <hr class="featurette-divider">
+            <div class="row featurette">
+                <div class="col-xs-6">
+                    <img class="img-rectangle"
+                        src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw=="
+                        alt="작품사진" width="100%">
+                </div>
+                <div class="col-xs-6" style="text-align: left;">
+                    <h2 class="featurette-heading">부스트코스코칭스터디 : CS50 2기(리드부스터)</h2>
+                    <h3><span class="text-muted">2021.01.11(월) ~ 2021.02.26(금)</span></h3>
+                    <p class="text-muted" style="font-size: large;"> 부스트코스 ‘모두를 위한 컴퓨터과학(CS50 2019)’을 매주 수강하고,
+                        팀원과 함께 미션을 수행하며 코치의 섬세한 피드백과 현업 개발자의 라이브 강의를 시청하는 <br>언택트 스터디입니다.</p>
+                </div>
+            </div>
+
+            <hr class="featurette-divider">
+            <div class="row featurette">
+                <div class="col-xs-6">
+                    <h2 class="featurette-heading"> 멋쟁이 사자처럼 9기</h2>
+                    <h3><span class="text-muted">2021.03 ~ 2021.12</span></h3>
+                    <p class="text-muted" style="font-size: large;">‘멋쟁이 사자처럼’은 누구나 자신만의 IT 서비스를 개발할 수 있도록 프로그래밍을
+                        <br>교육하는
+                        동아리입니다.</p>
+                </div>
+                <div class="col-xs-6">
+                    <img class="img-rectangle"
+                        src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw=="
+                        alt="작품사진" width="100%">
+                </div>
+            </div>
+            <hr class="featurette-divider">
+            <div class="row featurette">
+                <div class="col-xs-6">
+                    <img class="img-rectangle"
+                        src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw=="
+                        alt="작품사진" width="100%">
+                </div>
+                <div class="col-xs-6" style="text-align: left;">
+                    <h2 class="featurette-heading">2021년도 지역사회기여 장학생</h2>
+                    <h3><span class="text-muted">2021.03.01 ~ 2022.02.28</span></h3>
+                    <p class="text-muted" style="font-size: large;"> 은평구 지역아동센터 내에 있는 중학생 대상 학습지도 및 정서 지원 활동입니다.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+    {% endblock content %}
+    </body>

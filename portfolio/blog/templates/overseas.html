@@ -1,0 +1,147 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}
+해외경험
+{% endblock title %}
+
+{% block head %}
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Gamja+Flower&family=Jua&family=Nanum+Gothic&display=swap');
+
+  body {
+    font-family: 'Jua', sans-serif;
+    color: #5a5a5a;
+  }
+
+  .carousel {
+    height: 500px;
+  }
+
+  .carousel-caption {
+    z-index: 10;
+  }
+
+  .carousel .item {
+    height: 500px;
+    background-color: #777;
+  }
+
+  .carousel-inner>.item>img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    height: 500px;
+  }
+
+
+  .marketing .col-lg-4 {
+    margin-bottom: 50px;
+    text-align: center;
+  }
+
+  .jumbotron {
+    background-color: #94A9D8;
+    color: white;
+  }
+</style>
+{% endblock head %}
+
+<body>
+  {% block content %}
+  <div class="wrapper">
+    <div class="container">
+      <div class="jumbotron">
+        <h1>해외경험</h1>
+        <h3> # 해외여행 : 일본, 대만, 홍콩, 마카오, 그리스, 터키
+          <br> # 어학연수 : 중국 상해외국어대학교
+          <br> # 해외봉사 : 미얀마 <br>
+        </h3>
+      </div>
+
+
+      <div class="container-fluid marketing">
+        <br>
+        <div class="row">
+          <div class="col-lg-4">
+            <img class="img-rectangle" src="{% static '일본.jpg' %}" alt="일본사진" width="300" height="300">
+            <h3>일본여행(도쿄)</h3>
+            <h5>2017.06.27(화)~2017.06.30(금)</h5>
+          </div>
+
+          <div class="col-lg-4">
+            <img class="img-rectangle" src="{% static '미얀마양곤.jpg' %}" alt="미얀마양곤사진" width="300" height="300">
+            <h3>미얀마 단기선교(양곤)</h3>
+            <h5>2017.07.31(월)~2017.08.05(토)</h5>
+          </div>
+
+          <div class="col-lg-4">
+            <img class="img-rectangle" src="{% static '대만.jpg' %}" alt="대만사진" width="300" height="300">
+            <h3>대만여행(타이베이)</h3>
+            <h5>2018.02.03(토)~2018.02.10(토)</h5>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-4">
+            <img class="img-rectangle" src="{% static '홍콩.jpg' %}" alt="홍콩사진" width="300" height="300">
+            <h3>홍콩 여행</h3>
+            <h5>2019.02.25(월)~2019.03.01(금)</h5>
+          </div>
+
+          <div class="col-lg-4">
+            <img class="img-rectangle" src="{% static '마카오.jpg' %}" alt="마카오사진" width="300" height="300">
+            <h3>마카오 여행</h3>
+            <h5>2019.02.27(수)</h5>
+          </div>
+
+          <div class="col-lg-4">
+            <img class="img-rectangle" src="{% static '그리스.jpg' %}" alt="그리스사진" width="300" height="300">
+            <h3>그리스 여행(아테네)</h3>
+            <h5>2019.05.07(화)~2019.05.11(토) <br> 2019.05.20(월)~2019.05.22(수) </h5>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-4">
+            <img class="img-rectangle" src="{% static '이스탄불.jpg' %}" alt="이스탄불사진" width="300" height="300">
+            <h3>터키 여행(이스탄불)</h3>
+            <h5>2019.05.11(토)~2019.05.12(일) <br>2019.05.19(일)~2019.05.20(월) </h5>
+          </div>
+
+          <div class="col-lg-4">
+            <img class="img-rectangle" src="{% static '카파도키아.jpg' %}" alt="카파도키아사진" width="300" height="300">
+            <h3>터키 여행(카파도키아)</h3>
+            <h5>2019.05.12(일)~2019.05.14(화)</h5>
+          </div>
+
+          <div class="col-lg-4">
+            <img class="img-rectangle" src="{% static '파묵칼레.jpg' %}" alt="파묵칼레사진" width="300" height="300">
+            <h3>터키 여행(파묵칼레)</h3>
+            <h5>2019.05.15(수)~2019.05.17(금)</h5>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-4">
+            <img class="img-rectangle" src="{% static '페티예.jpg' %}" alt="페티예사진" width="300" height="300">
+            <h3>터키 여행(페티예)</h3>
+            <h5>2019.05.17(금)~2019.05.19(일)</h5>
+          </div>
+
+          <div class="col-lg-4">
+            <img class="img-rectangle" src="{% static '미얀마.jpg' %}" alt="미얀마사진" width="300" height="300">
+            <h3>미얀마 단기선교(빠떼인)</h3>
+            <h5>2019.06.30(일)~2019.07.06(토)</h5>
+          </div>
+
+          <div class="col-lg-4">
+            <img class="img-rectangle" src="{% static '상해외대.jpg' %}" alt="카파도키아사진" width="300" height="300">
+            <h3>중국 상해외국어대학교</h3>
+            <h5>2020.01.05(일)~2020.01.24(금)</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  {% endblock content %}
+</body>

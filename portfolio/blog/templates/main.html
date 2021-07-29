@@ -1,0 +1,80 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}
+포트폴리오
+{% endblock title %}
+
+{% block head %}
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Gamja+Flower&family=Jua&family=Nanum+Gothic&display=swap');
+
+    body {
+        font-family: 'Jua', sans-serif;
+        color: #5a5a5a;
+    }
+
+    a {
+        text-decoration: none;
+        color: #5a5a5a;
+    }
+
+    a:visited {
+        text-decoration: none;
+    }
+
+    a:hover {
+        text-decoration: none;
+    }
+
+    a:focus {
+        text-decoration: none;
+    }
+
+    a:hover,
+    a:active {
+        text-decoration: none;
+    }
+</style>
+{% endblock head %}
+
+<body>
+    {% block content %}
+    <div class="wrapper">
+        <div class="container">
+            <div>
+                <img src="{% static '메인사진.png' %}" alt="메인사진" width="100%">
+            </div>
+            <br><br>
+
+            <div class="row">
+                <div class="col-lg-6">
+                    <h1>학력사항</h1>
+                    <h3>선정고등학교 (2014.03~2017.02) 자연계열 <br>
+                        성신여자대학교 (2017.03~) 컴퓨터공학과-심화전공</h3>
+                </div>
+
+                <div class="col-lg-6">
+                    <h1>contact</h1>
+                    <h3>e-mail<br>
+                        naeyoung123@naver.com<br><br>
+                        블로그<br>
+                        <a href="https://blog.naver.com/naeyoung123">https://blog.naver.com/naeyoung123</a></h3>
+                </div>
+
+            </div>
+            <br><br>
+            <hr class="featurette-divider">
+            <br><br>
+            <div style="text-align: center;">
+                <h1 style="text-align: center;">보유 자격증</h1>
+                <img class="img-rectangle" src="{% static '자격증.png' %}" alt="작품사진" width="60%">
+            </div>
+            <br><br>
+        </div>
+
+    </div>
+
+    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+    {% endblock content %}
+</body>
